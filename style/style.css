@@ -350,7 +350,7 @@ footer p:nth-child(n+6){
 /*(game over)*/
 
 /*Адаптация под мобилочку из шаблона начинается тут*/
-@Media(max-width: 376px){
+@Media(max-width: 500px){
 	header{
 	position: absolute;
 	top: -500;
