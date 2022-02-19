@@ -229,6 +229,7 @@ footer .feedback{
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 350px;
     height: 50px;
     align-items: center;
