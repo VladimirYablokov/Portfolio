@@ -20,17 +20,10 @@ header{
 #minibar{
 	display: flex;
 	flex-direction: column;
-	/*width: 10px;*/
 	position: absolute;
 	opacity: 0;
-
 }
-#minibar a{
-	padding-bottom: 3px;
-	display: inline-flex;
-	flex-direction: column;
-}
-#minibar a img{
+#minibar img{
 	padding: 2px;
 }
 nav{
@@ -73,7 +66,7 @@ header::after{
     transform: rotate(0.75turn);
     display: inline-flex;
     align-items: flex-end;
-    padding-bottom: 20px;
+    padding-bottom: 20px ;
 }
 .language a:focus{
 	transform: scale(1.3);
