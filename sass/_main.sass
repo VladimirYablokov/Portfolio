@@ -1,0 +1,124 @@
+.main
+	display: flex
+	justify-content: space-between
+	padding: 50px 150px 0px 150px
+
+	.main_name>h1
+		font-size: 47px
+		line-height: 60px
+		font-weight: normal
+
+	.main_info
+		align-self: end
+
+	.main_info p
+		margin: 5px
+
+	.language
+		transform: rotate(0.75turn)
+		display: inline-flex
+		align-items: flex-end
+		padding-bottom: 20px 
+
+	.language a:first-child
+		color: #828282
+
+	.language a:focus
+		transform: scale(1.3)
+
+
+	.language a:last-child
+		color: black
+		padding-left: 1px
+
+	.language p:nth-child(2)::after
+		content: ''
+		display: block
+		border-right: 1px solid black
+		height: 23px
+		margin: 0 5px
+
+.main_photo
+	background-image: url('../media/myphoto.jpg')
+	height: 700px
+	margin: 50px 150px 80px 150px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+.about_me
+	display: flex
+	flex-direction: column
+	align-items: center
+	background-color: #F6F6F6
+	padding: 120px 150px
+
+	h2
+		font-size: 34px
+		padding-bottom: 20px
+		font-weight: normal
+
+	p
+		margin: 5px
+
+	// .about_me p:nth-child(3)
+	// 	padding-bottom: 50px
+
+	// .about_me p:nth-child(5)
+	// 	padding-bottom: 100px
+
+.skills
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 120px 150px
+
+	h2
+		font-size: 34px
+		font-weight: normal
+		padding-bottom: 80px
+
+.cards
+	display: grid
+	grid-template-columns: repeat(4, 150px)
+	grid-template-rows: repeat(1, 250px)
+	grid-gap: 20px
+	justify-content: space-between
+	padding: 0 150px 120px 150px
+
+
+	&>div
+		display: flex
+		flex-direction: column
+		align-items: center
+		cursor: pointer
+
+	&>div>img
+		padding: 20px
+		height: 100px
+
+	&>div>p
+		color: #828282
+		padding-bottom: 50px
+
+.stars
+	display: flex
+	list-style: none
+
+	li
+		padding: 3px
+
+.cards .card1 .stars li:nth-child(5)
+	color: #E5E5E5
+
+.cards .card2 .stars li:nth-child(n+4)
+	color: #E5E5E5
+
+.cards .card3 .stars li:nth-child(5)
+	color: #E5E5E5
+
+.cards .card4 .stars li:nth-child(5)
+	color: #E5E5E5
+
+#portfolioMin
+	display: none

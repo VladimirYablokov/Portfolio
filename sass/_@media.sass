@@ -1,0 +1,152 @@
+@Media(max-width: 1024px)
+	header
+		justify-content: space-between
+		color: #828282
+		padding: 30px 50px 0px 50px
+
+	.main
+		display: flex
+		justify-content: space-between
+		padding: 20px 50px 0px 49px
+
+	.main_photo
+		margin: 50px
+
+
+	.about_me
+		padding: 20px 0
+	
+	.about_me p:nth-child(5)
+		padding-bottom: 0px
+
+	.skills
+		padding: 0
+
+	.skills h2
+		padding: 20px 0
+
+	.gallery-container
+		width: 80%
+		height: 500px
+		position: relative
+		margin: 0 auto
+
+		&>div
+			width: 100%
+			height: 100%
+
+	
+	.cards
+		justify-content: space-around
+		padding: 20px 0
+
+	footer
+		padding: 20px
+
+	footer h2
+		padding: 20px 0
+
+	footer button
+		margin: 30px 0 33px 0
+
+@Media(max-width: 768px)
+	header
+		justify-content: space-between
+		color: #828282
+
+
+	.main
+		display: flex
+		justify-content: space-between
+
+	.gallery-container
+		width: 80%
+		height: 300px
+		position: relative
+		margin: 0 auto
+
+	.cards
+		display: grid
+		grid-template-columns: repeat(2, 150px)
+		grid-template-rows: repeat(2, 250px)
+		grid-gap: 20px
+		justify-content: space-around
+
+@Media(max-width: 513.98px)
+	header
+		position: absolute
+		top: -500
+		right: -500
+		opacity: 0
+
+
+	#minibar
+		right: 20px
+		top: 40px
+		opacity: 1
+
+	.main
+		display: flex
+		flex-direction: column
+		padding: 20px 20px 0px 20px
+
+	.main_name>h1
+		font-size: 47px
+		line-height: 60px
+		font-weight: normal
+
+	.main_info
+		align-self: start
+		padding-bottom: 20px
+
+	.main_info p
+		margin: 5px
+
+	.main_photo
+		margin: 20px
+		height: 450px
+		
+	.language
+		opacity: 0
+		position: absolute
+		top: -500
+		right: -500
+
+	.about_me
+		display: flex
+		flex-direction: column
+		align-items: center
+		background-color: #F6F6F6
+		padding: 100px 10px
+
+	.about_me p
+		margin: 5px
+		text-align: center
+
+	.skills
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 100px 50px
+
+	.cards
+		display: grid
+		grid-template-columns: repeat(1, 150px)
+		grid-template-rows: repeat(4, 250px)
+		grid-gap: 20px
+		padding: 0 0 50px 0
+	footer
+		padding: 100px 0
+
+	footer button
+		width: 270px
+		margin: 30px 0 33px 0
+
+	footer .feedback
+		justify-content: space-evenly
+
+
+	#portfolioMin
+		display: flex
+	#portfolioMax
+		display: none
