@@ -24,8 +24,7 @@ slider_container.append(slider_main, slider_trigger);
 slider_main.append(slider_film);
 rootElem.append(slider_container);
 
-
-const film_elems = imgList.map(img_name=>{
+const film_elems = imgList.map(img_name => {
 	const slider_width = slider_container.offsetWidth;
 	const divElem = document.createElement('div');
 	divElem.style.width = slider_width + 'px';
@@ -33,12 +32,12 @@ const film_elems = imgList.map(img_name=>{
 	return divElem
 });
 
-const render = ()=>{
+const render = () => {
 	const slider_width = slider_container.offsetWidth;
 	slider_film.style.right = slider_width * imgIndex + 'px';
 }
 
-const changeSize = ()=>{
+const changeSize = () => {
 	const slider_width = slider_container.offsetWidth;
 	slider_film.style.width = slider_width * imgList.length + 'px';
 	film_elems.forEach(elem => elem.style.width = slider_width + 'px');
@@ -48,25 +47,21 @@ const changeSize = ()=>{
 window.addEventListener('resize', changeSize);
 changeSize()
 
-
-
 slider_film.append(...film_elems)
 
-
-
-slider_trigger_left.addEventListener('click', ()=>{
-	if (imgIndex > 0){
+slider_trigger_left.addEventListener('click', () => {
+	if (imgIndex > 0) {
 		imgIndex--;
-	}else{
+	} else {
 		imgIndex = imgList.length - 1;
 	}
 	render()
 });
 
-slider_trigger_right.addEventListener('click', ()=>{
-	if (imgList.length - 1 > imgIndex){
+slider_trigger_right.addEventListener('click', () => {
+	if (imgList.length - 1 > imgIndex) {
 		imgIndex++;
-	}else{
+	} else {
 		imgIndex = 0;
 	}
 	render()
